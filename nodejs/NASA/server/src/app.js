@@ -8,6 +8,8 @@ const launchesRouter = require('./routes/launches/launches.router');
 
 const app = express();
 
+const password = "ym8feHI83aIOixPL";
+
 app.use(cors({
     origin: 'http://localhost:3000',
 }));
