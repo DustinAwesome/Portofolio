@@ -12,7 +12,7 @@ function listen(io) {
 
         socket.on("ready", () => {
 
-            room = "room1" + Math.floor(readyPlayerCount / 2);
+            room = "room " + Math.floor(readyPlayerCount / 2);
             socket.join(room);
 
             console.log("Player ready", socket.id, room);
